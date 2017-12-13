@@ -5,7 +5,7 @@ jdk:
 
 services:
   - docker
-	
+  
 sudo: required
 
 before_install:

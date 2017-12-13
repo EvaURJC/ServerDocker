@@ -19,7 +19,7 @@ script:
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u "evaurjc2017" -p "qwertyuiop";
-    docker tag practicaserver evaurjc2017videoclubel:practicaserver;
+    docker tag practicaserver evaurjc2017/videoclubel:practicaserver;
     docker tag evaurjc2017/videoclub:pracsql evaurjc2017/videoclubel:pracsql;
     docker push evaurjc2017/videoclubel;
     fi
